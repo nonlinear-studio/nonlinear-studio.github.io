@@ -1,0 +1,11 @@
+baseURL = 'https://nonlinear-studio.github.io/'
+languageCode = 'en-us'
+title = 'Nonlinear Studio'
+publishDir = 'docs'
+
+[params]
+  description = 'Digital experiments & creative code'
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
