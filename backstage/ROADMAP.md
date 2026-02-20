@@ -13,63 +13,74 @@
 
 ```mermaid
 graph LR
-    A[📋 v0.1.0 Discovery]
-    B[📋 v0.2.0 Groups Logic]
+    A[📋 v0.1.0 Foundation]
+    B[📋 v0.2.0 Content]
+    C[📋 v0.3.0 Features]
     A --> B
+    B --> C
 ```
 
 ---
 
-## v0.1.0 | [notes](epic-notes/v0.1.0-discovery.md)
+## v0.1.0 | [notes](epic-notes/v0.1.0-foundation.md)
 
-### Discovery
+### Foundation - Design & Deploy
 
-**Goal:** Define mental model and establish visual identity
+**Goal:** Get the blog live with basic design and deploy pipeline
 
 **Tasks:**
 
-- [ ] List critical user flows
-- [ ] User flow exercise
-- [ ] Get actionables from user flows
-- [ ] Discuss deliverables (can we use Hugo? can it BECOME the site?)
-- [ ] Define mental model (core concepts, user flows, architecture)
-- [ ] Logo design
+- [x] Hugo site structure (publishDir = docs)
+- [x] Swup page transitions integration
+- [x] SCSS setup (assets/scss/main.scss)
+- [x] GitHub Pages configuration (main/docs)
+- [x] Repository made public
+- [ ] Basic navigation (home, about, posts)
+- [ ] Typography & color system
+- [ ] Responsive layout (mobile-first)
+- [ ] Custom 404 page
+- [ ] Deploy and verify live site
 
-**Details:** [v0.1.0-discovery.md](epic-notes/v0.1.0-discovery.md)
+**Success:** Site live at https://nonlinear-studio.github.io with clean design
 
 ---
 
 ## v0.2.0
 
-### Groups Logic (BeeKEM Protocol)
+### Content - First Posts & About
 
-**Goal:** Research and implement group encryption/authorization for CRDTs
-
-**Context:** BeeKEM protocol (Ink & Switch Keyhive project) - key encapsulation for group messaging in local-first apps
-
-**Key Concepts:**
-- **Keyhive:** Capability-based auth + sync for CRDTs
-- **BeeKEM:** Key encapsulation mechanism for group encryption
-- **Sedimentree:** Probabilistic compression of CRDT updates by DAG depth
-- **Local-first:** Autonomy, privacy, consent (not just technical architecture)
-
-**Problem:**
-- CRDTs need end-to-end encryption without breaking batching optimizations
-- Group collaboration = secure group messaging complexity
-- Need distributed capability-based authorization (read/write/admin roles)
+**Goal:** Populate with initial content and establish writing workflow
 
 **Tasks:**
-- [ ] Read BeeKEM protocol paper/spec
-- [ ] Understand Keyhive architecture (delegation chains, capabilities)
-- [ ] Understand Sedimentree (DAG depth-based compression)
-- [ ] Evaluate fit for Nonlinear Studio use case
-- [ ] Prototype or integrate (if applicable)
 
-**Reference:** https://meri.garden/a-deep-dive-explainer-on-beekem-protocol/
+- [ ] About page (who/what/why)
+- [ ] First 3 posts (topics TBD)
+- [ ] RSS feed configuration
+- [ ] Post template/archetype
+- [ ] Tags/categories structure
+- [ ] Reading time estimate
+- [ ] Social sharing meta tags
 
-**Success:**
-- Clear understanding of BeeKEM vs alternatives
-- Decision: implement, fork, or use different approach
-- If implementing: prototype working with test CRDTs
+**Success:** 3+ posts published, RSS working, About page complete
+
+---
+
+## v0.3.0
+
+### Features - Enhanced Reading Experience
+
+**Goal:** Add features that make the blog more engaging
+
+**Tasks:**
+
+- [ ] Syntax highlighting for code blocks
+- [ ] Table of contents (long posts)
+- [ ] Previous/Next post navigation
+- [ ] Search (lunr.js or similar)
+- [ ] Dark mode toggle
+- [ ] Image optimization pipeline
+- [ ] Comments (optional - self-hosted?)
+
+**Success:** Enhanced UX, reader-friendly features
 
 ---
