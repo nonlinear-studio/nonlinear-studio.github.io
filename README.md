@@ -1,11 +1,16 @@
 # nonlinear-studio.github.io
 
+
+
 > 🤖
+>
 > This project follows [backstage protocol](https://github.com/nonlinear/backstage) v0.0.0
 >
-> - [README](README.md) 👏 [ROADMAP](backstage/ROADMAP.md) 👏 [CHANGELOG](backstage/CHANGELOG.md) 👏 checks: [local](backstage/checks/local/) <sup>0</sup>, [global](backstage/checks/global/) <sup>28</sup>
+> [README](README.md) 👏 [ROADMAP](backstage/ROADMAP.md) 👏 [CHANGELOG](backstage/CHANGELOG.md) 👏 checks: [local](backstage/checks/local/) <sup>1</sup>, [global](backstage/checks/global/) <sup>0</sup>
 >
 > 🤖
+
+
 
 Hugo blog with smooth page transitions (Swup) and SCSS customization.
 
